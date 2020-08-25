@@ -1,0 +1,175 @@
+@font-face {
+    font-family: "IRANSans";
+    src: url("../fonts/IRANSansWeb.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "IRANSans";
+    src: url("../fonts/IRANSansWeb_Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "IRANSans";
+    src: url("../fonts/IRANSansWeb_Medium.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "IRANSans";
+    src: url("../fonts/IRANSansWeb_Light.ttf");
+    font-weight:300;
+}
+@font-face {
+    font-family: "IRANSans";
+    src: url("../fonts/IRANSansWeb_UltraLight.ttf");
+    font-weight:100;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: IRANSans;
+    list-style-type: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+#panel{
+    display: flex;
+    direction: rtl;
+
+}
+#right-dashboard{
+    flex:20%;
+    background: rgb(233, 233, 233);
+    height: 100vh;
+    border-left: 1px solid #8f8f8f;
+
+}
+#main-dashboard{
+    flex:80%;
+    direction: rtl;
+    background: #cbcbcb;
+}
+#logo{
+    text-align: center;
+    border-bottom: 1px solid #8f8f8f;
+    padding: 5px 0px 5px 0px;
+    height: 80px;
+}
+
+#logo-image{
+    width: 180px;
+}
+
+#user-full-name{
+    text-align: center;
+}
+
+#topbar{
+    background: rgb(233, 233, 233);
+    border-bottom: 1px solid #8f8f8f;
+    padding: 5px 0px 5px 0px;
+    height: 80px;
+    display:table;
+    width: 100%;
+}
+#topbar>h3{
+    display:table-cell;
+    vertical-align:middle;
+    padding-right: 10px;
+}
+
+.dashboard-links{
+    border-bottom: 1px solid black;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.dashboard-links:hover{
+    background: #ffecde;
+}
+
+#main-section{
+    overflow: hidden;
+    position: relative;
+    top: 0;
+}
+
+.links>ul>a{
+    color: black;
+    text-decoration: none;
+}
+/*#firstone{*/
+/*    border-top: 1px solid black;*/
+/*}*/
+#logout{
+
+    background: none;
+    border: none;
+}
+.inner-flex{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 0px;
+}
+#course-title{
+    flex: 25%;
+}
+#dl-section{
+    flex: 100%;
+    direction: rtl;
+}
+#dl-section>a{
+    text-decoration: none;
+
+}
+
+#tobe{
+    font-size: 12px;
+    color: red;
+}
+
+.outer-flex{
+    width: 80%;
+    margin-top: 5px;
+    margin-right: 20px;
+
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 560px) {
+    #logo-image{
+        width: 120px;
+    }
+    .inner-flex{
+        display: block;
+
+    }
+    #course-title{
+
+    }
+    #dl-section{
+
+        direction: rtl;
+    }
+#course-title{
+    font-size: 16px;
+}
+#dl-section{
+    font-size: 15px;
+}
+    .dashboard-links{
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 0px;
+    }
+
+    #greeting-text{
+        font-size: 15px;
+    }
+}
